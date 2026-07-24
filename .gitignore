@@ -1,0 +1,5 @@
+content/dist/
+dist-lpk/
+node_modules/
+*.lpk
+.lazycat-action/

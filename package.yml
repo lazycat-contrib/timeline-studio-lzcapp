@@ -1,0 +1,24 @@
+package: community.lazycat.app.timeline-studio
+version: 0.6.1
+name: Timeline Studio
+description: "A local-first browser AI video editor with multi-track timeline editing, voiceovers, captions, talking avatars, and offline export."
+min_os_version: 1.5.0
+author: MartinDelophy
+license: MIT
+homepage: https://github.com/MartinDelophy/ai-video-editor
+
+permissions:
+  required:
+    - net.internet
+
+locales:
+  zh:
+    name: "时间线工作室"
+    description: "本地优先的浏览器 AI 视频编辑器，支持多轨时间线、配音、字幕、数字人和离线导出。"
+  zh_CN:
+    name: "时间线工作室"
+    description: "本地优先的浏览器 AI 视频编辑器，支持多轨时间线、配音、字幕、数字人和离线导出。"
+  en:
+    name: "Timeline Studio"
+    description: "A local-first browser AI video editor with multi-track timeline editing, voiceovers, captions, talking avatars, and offline export."
+

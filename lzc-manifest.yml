@@ -1,0 +1,25 @@
+application:
+  subdomain: timeline-studio
+  routes:
+    - /=file:///lzcapp/pkg/content/dist
+  public_path:
+    - /
+  injects:
+    - id: open-save-chooser
+      on: browser
+      when:
+        - /*
+      do:
+        - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-file-chooser-inject.js
+    - id: cross-origin-isolation
+      on: response
+      auth_required: false
+      when:
+        - /*
+      do: |
+        ctx.headers.set("Cross-Origin-Opener-Policy", "same-origin");
+        ctx.headers.set("Cross-Origin-Embedder-Policy", "require-corp");
+        ctx.headers.set("Cross-Origin-Resource-Policy", "same-origin");
+
+usage: "导入图片、视频、音频或 SRT 字幕后即可在多轨时间线上编辑；首次使用 AI 功能时会从互联网下载模型文件。视频、工程文件和其他导出内容均在浏览器本地生成。"
+

@@ -1,0 +1,7 @@
+{
+  "name": "timeline-studio-lazycat-package",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Minimal metadata used only by GitHub Actions to initialize the Node.js npm cache."
+}
+
